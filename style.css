@@ -1,0 +1,211 @@
+/*
+Theme Name: Marty 2b
+Author: Marty Spellerberg
+
+font-family: 'Neue Haas Grotesk Std Text 55 Roman'
+font-family: 'Neue Haas Grotesk Std Text 56 Italic'
+font-family: 'Neue Haas Grotesk Std Text 75 Bold'
+font-family: 'Neue Haas Grotesk Std Text 76 Bold Italic'
+
+
+
+*/
+
+body { font-family: 'Neue Haas Grotesk Text', Helvetica, sans-serif; font-weight: 400; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-size: 18px; color: #666; margin: 0; padding: 0; background: url('images/stripes.png') #e0e0e0; }
+
+a {color: #0086CC; text-decoration: none;
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	}
+a:hover {color: #333; cursor: pointer;}
+
+
+h1 { margin: 0; font-size: 24px; font-family: 'Neue Haas Grotesk Display', Helvetica, sans-serif; }
+h1 a { color: #666; }
+h1 a:hover { color: #333; }
+
+h2 { text-align: left; line-height: 1.2; margin-top: 0; font-family: 'Neue Haas Grotesk Display', Helvetica, sans-serif; font-weight: 600; }
+
+h3 { font-size: 1em; margin-top: 2em; }
+
+h4 { font-size: .8em; text-transform: uppercase; margin-top: 2em; }
+
+sup { vertical-align: middle; margin: 0 .25em}
+
+img {border: 2px solid #ccc; clear: both; background: #ccc; }
+a img {border-color: #ccc}
+	
+blockquote {background: url(images/quote.svg) 0 4px no-repeat; margin-left: 10px; margin-right: 0; padding-left: 0;}
+blockquote p {margin-left: 20px;}	
+
+.fullpage {background: #e0e0e0; }	
+
+#content { clear: both; margin: auto; max-width: 802px; }
+
+.headerinner:before, .headerinner:after { content:""; display:table; clear:both; }
+
+.nav { padding: 0; margin: 0; overflow: hidden;  }
+.nav li.selected { font-weight: 700;}
+.nav li a {color: #666;}
+
+
+
+.nav:hover li a {color: #0086CC; }
+.nav:hover li a:hover {color: #333;}
+.nav:hover li.selected a {color: #333;}
+
+
+
+
+#tagsnav {clear: both; padding-top: 1em; }
+
+/* Home */
+
+.intro {font-size: 36px; color: #808080; clear: both; line-height: 1.1; }
+
+.piece h3 {margin-bottom: 0; }
+.piece h3 a {display: block; }
+.piece h3.off a:hover:after {font-family: "Genericons"; line-height: 0; content: ' \f431'; line-height: 0; }
+.piece h3.on a:hover:after {font-family: "Genericons"; line-height: 0; content: ' \f432'; line-height: 0; }
+
+.piece img {max-width: 100%;}
+
+.piece {border-bottom: 2px solid #ccc; padding: .5em 0}
+.piece h3 { margin: 0;}
+
+.entry-content p:first-child {margin-top: 0;}
+
+
+/* Blog */
+
+.caption {font-size: .8em; }
+
+.alert { border-top: 2px solid #ffffcc; border-bottom: 2px solid #ffffcc; padding: 1em 1.5em; margin-bottom: 1.5em; } 
+
+p.note { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; padding: 1em 1.5em; margin-bottom: 1.5em; }
+div.note { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; padding: 1px 1.5em; margin-bottom: 1.5em; clear: both;}
+
+
+.post { border-top: 2px solid #ccc; padding: 3em 0 2em 0;}
+.post:before, .post:after { content:""; display:table; clear:both; }
+.post.first {border-top: none;}
+
+.post .date { margin: 3em 0 2em 0; text-align: center; color: #808080; }
+
+.post .alignleft {float: left; padding-bottom: 30px;}
+.post .alignright {float: right;  padding-bottom: 30px;}
+.post img {max-width: 100%; box-sizing:border-box;}
+
+
+.centered {text-align: center;}
+
+
+.external:after {content: '\f442'; font-family: "Genericons"; line-height: 0; font-size: .9em; }
+.caption .external:after {font-size: 1em;}
+
+.permalink:before {content: '\f107';  font-family: "Genericons"; line-height: 0; }
+
+
+.paging { font-family: 'Neue Haas Grotesk Display', Helvetica, sans-serif;  font-weight: 600; width: 100%; overflow: hidden; padding: 1em 0; clear: both; list-style: none; text-align: center; }  
+.paging li { display: inline; margin: 0 .25em;}  
+.paging li.active { color: #e0e0e0; background: rgba(0,0,0,0.4); border-radius: 3px; padding: 10px 14px 7px 14px; }
+.paging li a { background: #ccc; border-radius: 3px; padding: 10px 14px 7px 14px; } 
+
+.tags {margin-bottom: 4em; text-align: center; }
+.tags h3 {display: inline; margin-right: 18px; }
+.tags ul {margin: 0; padding-left: 0; list-style: none; display: inline; }
+.tags ul li {margin: 0 18px 0 0; display: inline; }
+.tags a:before { font-family: "Genericons"; line-height: 0; content: '\f302';}
+
+#disqus_thread {margin-bottom: 3em;}
+
+
+/* Tag Archive */
+
+.tagtitle { font-size: 28px; color: #808080; line-height: 1.1; }
+.tagtitle strong { font-family: 'Neue Haas Grotesk Display', Helvetica, sans-serif; }
+
+
+/* Footer */
+
+.footer {clear: both;text-align: center;}
+
+.mediatemple {color: #808080; margin: 3em 0; }
+.mediatemple a { background: url(images/mediatemple.svg) no-repeat center center; display: inline-block; width: 75px; height: 30px; background-size: 75px 30px;  vertical-align: middle; margin-left: .25em; }
+.mediatemple span {display: none}
+
+.fineprint { font-size: .6em; color: #808080; }
+
+/* Phone Portrait */
+
+	body {line-height: 1.2; }
+
+	h1 { margin: 0 0 .5em 0; }
+
+	h2 {font-size: 24px;}
+
+	.header { padding: 0 1em; }
+	.headerinner { padding: 1.5em 0; }
+
+	.layout {padding: 1em;}
+
+	.nav {line-height: 1.6;  list-style: none; }
+
+	.thumbnail {margin: 0 0 1em 0; display: block; }
+
+/* Phone Landscape */
+@media screen and (min-width: 480px) {
+
+	h2 {font-size: 30px;}
+
+	.header { padding: 0 1.5em; }
+
+	.layout {padding: 2.5em 1.5em 1.5em 1.5em;}
+
+}
+
+@media screen and (min-width: 580px) {
+
+
+
+#topnav {float: left; clear: none; }
+
+
+
+.nav {padding-top: .5em; line-height: 1.3}
+.nav li {display: inline-block; margin-right: 1em; }
+.nav li.line {border-left: 2px solid #ccc; padding-left: 1em;  }
+
+.tag:before { font-family: "Genericons"; line-height: 0; content: '\f302';}
+
+	.thumbnail {float: right; margin: 0 0 1em 2em;}
+
+
+}
+
+/* Tablet Portrait */
+@media screen and (min-width: 950px) {
+
+	body {line-height: 1.4; }
+	h1 {float: right; margin: 0; }
+	h1 a { color: #808080; }
+
+	.nav li a {color: #808080;}
+
+ 	.intro span {display: block;}
+	.layout {padding: 2em 2.5em 1em 2.5em;}
+
+	.header { padding: 0 3em;}
+	.headerinner { padding: 2em 0 1.5em 0; }
+
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 1024px) {
+
+	body {line-height: 1.5; }
+	.layout {padding: 2em 5em 1em 5em;}
+
+}

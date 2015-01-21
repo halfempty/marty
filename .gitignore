@@ -1,0 +1,6 @@
+.DS_Store
+fonts/*.svg
+fonts/*.woff
+fonts/*.woff2
+fonts/*.eot
+fonts/*.ttf

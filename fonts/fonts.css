@@ -1,0 +1,91 @@
+@import url("//hello.myfonts.net/count/28e46f");
+@import url("//hello.myfonts.net/count/2ba61c");
+@import url("//hello.myfonts.net/count/2d17fe");
+
+/* Neue Haas Grotesk Text */
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Text';
+	font-weight: 400;
+	font-style: normal;
+	src: url('28E46F_1_0.eot');
+	src: url('28E46F_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('28E46F_1_0.woff') format('woff'),
+		 url('28E46F_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Text';
+	font-weight: 400;
+	font-style: italic;
+	src: url('28E46F_0_0.eot');
+	src: url('28E46F_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('28E46F_0_0.woff') format('woff'),
+		 url('28E46F_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Text';
+	font-weight: 700;
+	font-style: normal;
+	src: url('28E46F_2_0.eot');
+	src: url('28E46F_2_0.eot?#iefix') format('embedded-opentype'),
+		 url('28E46F_2_0.woff') format('woff'),
+		 url('28E46F_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Text';
+	font-weight: 700;
+	font-style: italic;
+	src: url('28E46F_3_0.eot');
+	src: url('28E46F_3_0.eot?#iefix') format('embedded-opentype'),
+		 url('28E46F_3_0.woff') format('woff'),
+		 url('28E46F_3_0.ttf') format('truetype');
+}
+
+
+/* Neue Haas Grotesk Display */
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	font-weight: 600;
+	font-style: normal;
+	src: url('2D17FE_0_0.eot');
+	src: url('2D17FE_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('2D17FE_0_0.woff2') format('woff2'),
+		 url('2D17FE_0_0.woff') format('woff'),
+		 url('2D17FE_0_0.ttf') format('truetype');
+}
+ 
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	font-weight: 600;
+	font-style: italic;
+	src: url('2D17FE_1_0.eot');
+	src: url('2D17FE_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('2D17FE_1_0.woff2') format('woff2'),
+		 url('2D17FE_1_0.woff') format('woff'),
+		 url('2D17FE_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	font-weight: 700;
+	font-style: normal;
+	src: url('2BA61C_0_0.eot');
+	src: url('2BA61C_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('2BA61C_0_0.woff') format('woff'),
+		 url('2BA61C_0_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {
+	font-family: 'Neue Haas Grotesk Display';
+	font-weight: 700;
+	font-style: italic;
+	src: url('2BA61C_1_0.eot');
+	src: url('2BA61C_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('2BA61C_1_0.woff') format('woff'),
+		 url('2BA61C_1_0.ttf') format('truetype');
+}
