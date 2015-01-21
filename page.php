@@ -2,21 +2,13 @@
 
 <?php if (have_posts()) : ?>
 
-	<div class="page" role="main">
+	<?php while (have_posts()) : the_post(); ?>
 
-		<div id="content">
+		<article>
+			<?php the_content(); ?>
+		</article>
 
-		<?php while (have_posts()) : the_post(); ?>
-
-			<div class="post first">
-				<?php the_content(); ?>
-			</div>
-
-		<?php endwhile; ?>
-
-		</div>
-
-	</div>
+	<?php endwhile; ?>
 
 <?php endif; ?>
 

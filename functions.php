@@ -12,12 +12,11 @@ function queue_scripts() {
 	remove_action('wp_head', 'index_rel_link');
 	remove_action('wp_head', 'adjacent_posts_rel_link');
 
-//	if(!wp_script_is('jquery')) wp_enqueue_script("jquery");
+	if(!wp_script_is('jquery')) wp_enqueue_script("jquery");
 
-	// Theme
-	// $themejs = get_template_directory_uri() . '/js/marty.js';
-	// wp_register_script('themejs',$themejs);
-	// wp_enqueue_script( 'themejs',array('packeryjs','cookiejs','jquery'));
+	$themejs = get_template_directory_uri() . '/js/marty.js';
+	wp_register_script('themejs',$themejs);
+	wp_enqueue_script( 'themejs',array('jquery'));
 
 	$fontscss = get_template_directory_uri() . '/fonts/fonts.css';
 	wp_register_style('fontscss',$fontscss);
@@ -57,7 +56,7 @@ function pagination( $query, $baseURL = '' ) {
 		}
 		// Next link?
 		if ( $page < $query->max_num_pages ) {
-			echo '<li><a href="'.$baseURL.'page/'.($page+1).'/'.$qs.'">&rarr;</a></li>';
+			echo '<li><a href="'.$baseURL.'page/'.($page+1).'/'.$qs.'">&rarr; </a></li>';
 		}
 		echo '</ul>';
 	}

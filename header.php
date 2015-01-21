@@ -12,8 +12,6 @@
 		echo ' &ndash; ' . sprintf( __( 'Page %s' ), max( $paged, $page ) );
 	?></title>
 
-
-	<!-- Fav Icons: Browser, iOS, Windows 8 -->
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicons/favicon.ico">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicons/favicon-114.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicons/favicon-72.png" />
@@ -21,7 +19,6 @@
 	<meta name="application-name" content="Marty Spellerberg"/> 
 	<meta name="msapplication-TileColor" content="#ebebeb"/> 
 	<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri() ?>/images/favicons/favicon-144.png"/>
-
 
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
@@ -34,19 +31,20 @@
 </head>
 <body>
 <div class="fullpage">
-<div class="header"><div class="headerinner">
-	<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+	<div class="layout">
 
-	<ul id="topnav" class="nav"> 			 
-	<li <?php if ( is_category('blog') || is_home() ) echo 'class="selected"' ?>><a href="/">All</a></li>
-	<li <?php if ( is_tag('artists') ) echo 'class="selected"' ?>><a href="/tag/artists" class="tag">Artists</a></li>
-	<li <?php if ( is_tag('museums') ) echo 'class="selected"' ?>><a href="/tag/museums" class="tag">Museums</a></li>
-	<li <?php if ( is_tag('wordpress') ) echo ' class="selected"' ?>><a href="/tag/wordpress" class="tag">WordPress</a></li>
-	<!--	<li class="line <?php if ( is_page('opportunities') ) echo 'selected' ?>"><a href="/opportunities">Opportunities</a></li> -->
-		<li class="line"><a href="mailto:marty@martyspellerberg.com">Email</a></li>
-	</ul>
-</div></div>
+		<h1><a href="<?php echo get_option('home'); ?>/">Marty Spellerberg</a></h1>
 
-<div class="headerspacer"></div>
-
-<div class="layout">
+		<div class="header">
+			<div class="headerpadding">
+				<a class="close"><span>Close</span></a>
+				<ul>
+					<li <?php if ( is_category('blog') || is_home() ) echo 'class="selected"' ?>><a href="/">All</a></li>
+					<li <?php if ( is_tag('artists') ) echo 'class="selected"' ?>><a href="/tag/artists" class="tag">Artists</a></li>
+					<li <?php if ( is_tag('museums') ) echo 'class="selected"' ?>><a href="/tag/museums" class="tag">Museums</a></li>
+					<li <?php if ( is_tag('wordpress') ) echo ' class="selected"' ?>><a href="/tag/wordpress" class="tag">WordPress</a></li>
+					<!-- <li class="line <?php if ( is_page('opportunities') ) echo 'selected' ?>"><a href="/opportunities">Opportunities</a></li> -->
+					<li class="line"><a href="mailto:marty@martyspellerberg.com">Email</a></li>
+				</ul>
+			</div>
+		</div>
