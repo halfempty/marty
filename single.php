@@ -12,15 +12,14 @@
 
 			<p class="date">Posted <?php the_time('F Y') ?></p>
 
-		</article>
-
-		<div class="afterpost">
-
 			<?php the_tags( '<div class="tags"><ul><li><span>', '</span></li><li><span>', '</span></li></ul></div>'); ?>	
 
-			<?php if ( !in_category('work') && comments_open( $post->ID ) ) comments_template(); ?>
+		</article>
 
-		</div>
+
+			<?php if ( !in_category('work') && comments_open( $post->ID ) ) : ?>
+				<div class="afterpost"><?php comments_template(); ?></div>
+			<?php endif; ?>
 
 	<?php endwhile; ?>
 

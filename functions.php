@@ -64,11 +64,18 @@ function pagination( $query, $baseURL = '' ) {
 
 
 // Featured Images / Post Thumbnails
-if ( function_exists( 'add_theme_support' ) ) {
-    add_theme_support( 'post-thumbnails' );
-	   // set_post_thumbnail_size( 125 ); // Normal post thumbnails
-	  //  add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size
-} 
+add_theme_support( 'post-thumbnails' );
+
+// High Quality
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
+//add_filter( 'the_content', 'remove_thumbnail_dimensions', 10 );
+
+function remove_thumbnail_dimensions( $html ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
 
 
 ?>

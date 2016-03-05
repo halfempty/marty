@@ -5,7 +5,7 @@
 /* Neue Haas Grotesk Text */
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Text';
+	font-family: 'Text';
 	font-weight: 400;
 	font-style: normal;
 	src: url('28E46F_1_0.eot');
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Text';
+	font-family: 'Text';
 	font-weight: 400;
 	font-style: italic;
 	src: url('28E46F_0_0.eot');
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Text';
+	font-family: 'Text';
 	font-weight: 700;
 	font-style: normal;
 	src: url('28E46F_2_0.eot');
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Text';
+	font-family: 'Text';
 	font-weight: 700;
 	font-style: italic;
 	src: url('28E46F_3_0.eot');
@@ -48,7 +48,7 @@
 /* Neue Haas Grotesk Display */
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Display';
+	font-family: 'Display';
 	font-weight: 600;
 	font-style: normal;
 	src: url('2D17FE_0_0.eot');
@@ -59,7 +59,7 @@
 }
  
 @font-face {
-	font-family: 'Neue Haas Grotesk Display';
+	font-family: 'Display';
 	font-weight: 600;
 	font-style: italic;
 	src: url('2D17FE_1_0.eot');
@@ -70,7 +70,7 @@
 }
 
 @font-face {
-	font-family: 'Neue Haas Grotesk Display';
+	font-family: 'Display';
 	font-weight: 700;
 	font-style: normal;
 	src: url('2BA61C_0_0.eot');
@@ -81,7 +81,7 @@
  
   
 @font-face {
-	font-family: 'Neue Haas Grotesk Display';
+	font-family: 'Display';
 	font-weight: 700;
 	font-style: italic;
 	src: url('2BA61C_1_0.eot');
